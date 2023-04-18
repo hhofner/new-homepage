@@ -274,6 +274,12 @@ h2 + .header-anchor {
 
 /* Projects */
 
+.projects {
+  border-radius: 8px;
+  border: 1px solid #0000002e;
+  background: #00000003;
+  padding: 0.5em;
+}
 .project {
 	display: flex;
 	flex-direction: column;
