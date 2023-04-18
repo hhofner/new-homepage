@@ -225,11 +225,14 @@ header {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	text-transform: capitalize;
 	font-style: italic;
+	background-color: #a7d7a7;
 }
 .postlist-item > .post-tag {
 	align-self: center;
+}
+.post-tag::before {
+	content: '#';
 }
 
 /* Tags list */
@@ -267,4 +270,21 @@ a[href].header-anchor:focus,
 
 h2 + .header-anchor {
 	font-size: 1.5em;
+}
+
+/* Projects */
+
+.project {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: fit-content;
+	align-items: center;
+}
+.project > h3 {
+	margin: 0.25em;
+}
+.project > a > img {
+	border-radius: 8px;
+	width: 65px;
 }

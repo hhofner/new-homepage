@@ -5,6 +5,19 @@ eleventyNavigation:
   order: 1
 numberOfLatestPostsToShow: 3
 ---
+I like to work with <span class="post-tag"><a href="tags/vuejs">vuejs</a></span>. Check out some of my personal projects below, or check out my <a href="/uses">uses page</a>.
+
+<h1>Personal projects</h1>
+
+<section>
+<div class="project">
+<!-- <div class="shine"></div> -->
+<a href="https://my-gpt.net/"><img class="app-logo" src="img/igpt_icon.png" /></a>
+<h3>iGPT</h3>
+<small><a href="https://github.com/hhofner/iGPT">Source</a></small>
+</div>
+</section>
+
 {% set postsCount = collections.posts | length %}
 {% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
 <h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>

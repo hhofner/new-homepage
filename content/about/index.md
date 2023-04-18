@@ -6,4 +6,4 @@ eleventyNavigation:
 ---
 # About Me
 
-I am a person that writes stuff.
+My name is **Hans Hofner**, I am a web developer based in Japan.
