@@ -16,8 +16,12 @@
 	--text-color-link: #082840;
 	--text-color-link-active: #5f2b48;
 	--text-color-link-visited: #17050F;
+	--project-background-color: #00000003;
+	--project-border-color: #0000002e;
 
 	--syntax-tab-size: 2;
+
+	--tag-color: #a7d7a7;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -32,6 +36,10 @@
 		--text-color-link-visited: #a6a6f8;
 
 		--background-color: #15202b;
+		--project-background-color: #ffffff03;
+		--project-border-color: #ffffff2e;
+
+		--tag-color: #005000;
 	}
 }
 
@@ -226,7 +234,7 @@ header {
 	align-items: center;
 	justify-content: center;
 	font-style: italic;
-	background-color: #a7d7a7;
+	background-color: var(--tag-color);
 }
 .postlist-item > .post-tag {
 	align-self: center;
@@ -276,8 +284,8 @@ h2 + .header-anchor {
 
 .projects {
   border-radius: 8px;
-  border: 1px solid #0000002e;
-  background: #00000003;
+  border: 1px solid var(--project-border-color);
+  background: var(--project-background-color);
   padding: 0.5em;
 }
 .project {
